@@ -1,0 +1,18 @@
+.button {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.redBG {
+    background-color: red;
+
+}
+
+.blackBG {
+    background-color: black;
+}
+
+.greenBG {
+    background-color: green;
+}
