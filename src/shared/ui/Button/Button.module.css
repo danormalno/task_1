@@ -16,3 +16,23 @@
 .greenBG {
     background-color: green;
 }
+
+.width60 {
+    width: 60px;
+}
+.width100 {
+    width: 100px;
+}
+.width150 {
+    width: 150px;
+}
+
+.colorAqua {
+    color:aquamarine;
+}
+.colorViolet {
+    color:blueviolet;
+}
+.colorWhite {
+    color: white;
+}

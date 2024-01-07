@@ -1,4 +1,11 @@
 .general {
     display: flex;
     gap: 6px;
+    padding-top: 20px;
+}
+
+.main {
+    display:flex;
+    flex-direction: column;
+    
 }

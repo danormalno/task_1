@@ -3,12 +3,14 @@ import './App.css'
 import { Input } from "./shared/ui/Input/Input";
 
 const  App =() => {
-  return <div className="general">
-    <Button text={'btn'} backgroundColor={'red'}/>
-    <Button text={'btn 1'} backgroundColor={'black'}/>
-    <Button text={'btn 2'} backgroundColor={'green'}/>
-    <div>
-    <Input placeholder="first" backgroundColor="red"/>
+  return <div className="main">
+    <div className="general">
+    <Button text={'btn'} backgroundColor={'red'} size="60px" color="colorAqua"/>
+    <Button text={'btn 1'} backgroundColor={'black'} size="100px" color="colorViolet"/>
+    <Button text={'btn 2'} backgroundColor={'green'} size="150px" color="colorWhite"/>
+    </div>
+    <div className="general">
+    <Input placeholder="first" backgroundColor="red" />
     <Input placeholder="second" backgroundColor="black"/>
     <Input placeholder="third" backgroundColor="green"/>
     </div>

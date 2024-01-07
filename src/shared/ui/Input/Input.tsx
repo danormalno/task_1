@@ -13,7 +13,7 @@ interface InputProps {
 
 export const Input : FC<InputProps> = ({onChange, placeholder, backgroundColor}) => {
     return (
-        <input type="text" placeholder={placeholder} onChange={onChange} className={classnames(
+        <input type="text" placeholder={placeholder} className={classnames(
             styles.input,{
                 [styles.IP1] : backgroundColor === 'black',
                 [styles.IP2] : backgroundColor === 'green',
