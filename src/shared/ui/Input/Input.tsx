@@ -1,5 +1,5 @@
 // react
-import React, { FC, ChangeEvent } from "react";
+import React, { FC, ChangeEvent, useState } from "react";
 // libs
 import classnames from 'classnames'
 // styles
@@ -7,20 +7,15 @@ import styles from './Input.module.css'
 
 interface InputProps {
     placeholder : string;
-    onChange ?: (event: ChangeEvent<HTMLInputElement>) => void;
+    onChange : (event: ChangeEvent<HTMLInputElement>) => void;
     backgroundColor : 'red' | 'black' | 'green';
+    value : string;
 }
 
-export const Input : FC<InputProps> = ({onChange, placeholder, backgroundColor}) => {
-
-    const funcInputValue = (event: ChangeEvent<HTMLInputElement>) => {
-        const valueOfInput = event.target.value;
-        console.log(valueOfInput);
-    };
-    
+export const Input : FC<InputProps> = ({placeholder, backgroundColor, onChange, value}) => {
 
     return (
-        <input id="myInput" type="text" placeholder={placeholder} onChange={funcInputValue} className={classnames(
+        <input type="text" value={value} placeholder={placeholder} onChange={onChange} className={classnames(
             styles.input,{
                 [styles.IP1] : backgroundColor === 'black',
                 [styles.IP2] : backgroundColor === 'green',
